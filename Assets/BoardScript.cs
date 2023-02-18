@@ -9,7 +9,7 @@ public class BoardScript : MonoBehaviour
 {
     private string[] cardDeck = new string[]
     {
-        "ar00", "ar01", "ar02", "ar03", "ar04", "ar02=5", "ar06", "ar07", "ar08","ar09", "ar10",
+        "ar00", "ar01", "ar02", "ar03", "ar04", "ar05", "ar06", "ar07", "ar08","ar09", "ar10",
         "ar11", "ar12", "ar13", "ar14", "ar15", "ar16", "ar17", "ar18", "ar19", "ar20", "ar21",
         "cupa", "cuac", "cu02", "cu03", "cu04", "cu05", "cu06", "cu07", "cu08","cu09", "cu10",
         "cuki", "cukn", "cuqu",
@@ -64,7 +64,10 @@ public class BoardScript : MonoBehaviour
                 CardX.transform.rotation = Quaternion.Euler(0f, 0f, 90f);
                 sprRend.sortingOrder = 2;
             }
+
+            //CardX.AddComponent(typeof(EventHandler));
             
+
         }
 
     }
